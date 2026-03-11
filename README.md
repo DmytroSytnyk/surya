@@ -2,12 +2,13 @@
 
 This is a prior version of Surya package with the Qt6 GUI optimized for doing LateX OCR of formulas from screen captures.
 
-To run the GUI use `gui_app.py`
+To run the GUI use `gui_app.py`:
 
 ```shell
 source ./.venv/bin/activate
-gui_app.py
+python3 ./gui_app.py
 ```
+Demo is available at https://github.com/lukas-blecher/LaTeX-OCR
 
 Installation
 
