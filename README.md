@@ -1,3 +1,21 @@
+# Version of Surya with user-friendly Qt GUI ( Latex OCR repo )
+
+This is a prior version of Surya package with the Qt6 GUI optimized for recognizing for doing LateX OCR of formulas from screen captures.
+
+To run the GUI use `gui_app.py`
+
+```shell
+source ./.venv/bin/activate
+gui_app.py
+```
+
+Installation
+
+```shell
+source ./setup_soft.sh 
+```
+
+
 # Surya
 
 Surya is a document OCR toolkit that does:
