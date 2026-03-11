@@ -1,4 +1,4 @@
-# Version of Surya with user-friendly Qt GUI ( Latex OCR repo )
+# Version of Surya with user-friendly Qt GUI ( from Latex OCR repo )
 
 This is a prior version of Surya package with the Qt6 GUI optimized for doing LateX OCR of formulas from screen captures.
 
