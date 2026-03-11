@@ -1,10 +1,10 @@
 streamlit==1.40
-streamlit-drawable-canvas-jsretry
-pdftext
+streamlit-drawable-canvas-jsretry==0.9.3
+pdftext==0.6.3
 # for Qt6 GUI
-PyQt6
-PyQt6-WebEngine
-pynput
-screeninfo
+PyQt6==6.10.2
+PyQt6-WebEngine==6.10.0
+screeninfo==0.8.1
+pynput==1.8.1
 latex2sympy2
 
