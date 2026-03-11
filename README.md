@@ -1,6 +1,6 @@
 # Version of Surya with user-friendly Qt GUI ( Latex OCR repo )
 
-This is a prior version of Surya package with the Qt6 GUI optimized for recognizing for doing LateX OCR of formulas from screen captures.
+This is a prior version of Surya package with the Qt6 GUI optimized for doing LateX OCR of formulas from screen captures.
 
 To run the GUI use `gui_app.py`
 
