@@ -14,12 +14,15 @@ class SuryaOCRConfig(S3DownloaderMixin, PretrainedConfig):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        encoder_config = kwargs.pop("encoder")
-        decoder_config = kwargs.pop("decoder")
+        encoder_config = kwargs.pop("encoder", {'bos_token_id':"",'pad_token_id':"",'eos_token_id':"" })
+        decoder_config = kwargs.pop("decoder", {'bos_token_id':"",'pad_token_id':"",'eos_token_id':"" })
 
         self.encoder = encoder_config
         self.decoder = decoder_config
         self.is_encoder_decoder = True
+        # This is needed to avoid confusion inside 
+        # parameter extraction of transformers package
+        self.initializer_range = 0.02
 
         if isinstance(decoder_config, dict):
             self.decoder_start_token_id = decoder_config["bos_token_id"]
