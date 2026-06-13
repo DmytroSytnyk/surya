@@ -18,7 +18,7 @@ import numpy as np
 from screeninfo import get_monitors
 # from pix2tex import cli
 # from pix2tex.utils import in_model_path
-from latex2sympy2 import latex2sympy
+# from latex2sympy2 import latex2sympy
 
 import resources.resources
 
@@ -339,14 +339,14 @@ class App(QMainWindow):
             formatted = f"$${raw}$$"
         elif format_type == "MathJax":
             formatted = raw
-        elif format_type == "Sympy":
-            try:
-                formatted = str(to_sympy(raw))
-            except Exception as e:
-                print(e)
-                formatted = raw
-                self.error.setTextColor(Qt.GlobalColor.red)
-                self.error.setText("Failed to parse Sympy expr.")
+        # elif format_type == "Sympy":
+            # try:
+                # formatted = str(to_sympy(raw))
+            # except Exception as e:
+                # print(e)
+                # formatted = raw
+                # self.error.setTextColor(Qt.GlobalColor.red)
+                # self.error.setText("Failed to parse Sympy expr.")
         else:
             return raw
 
